@@ -1,0 +1,38 @@
+kendaraan = ['beat karbu','motor',200,'pink',3]
+print(kendaraan)
+
+kendaraan.append('10jt')
+print(kendaraan)
+
+kendaraan.append('matic')
+print(kendaraan)
+
+kendaraan.insert(2,'honda')
+print(kendaraan)
+
+
+angka_pilihan = int(input("""masukkan pilihan:
+1.Menghitung luas persegi
+2.Menghitung luas lingkaran
+3.Menghitung luas segitiga
+"""))
+
+match angka_pilihan:
+    case 1:
+        print("Menghitung luas persegi")
+        sisi =int(input("Masukkan nilai sisi:"))
+        luas_persegi = sisi **2
+        print(f"Luas persegi dengan sisi {sisi} cm,adalah {luas_persegi} cm^2")
+    case 2: 
+        jari_jari = float(input("masukkan jari_jari lingkaran: "))
+        luas = 3.14159 * (jari_jari ** 2)
+        print(f"luas lingkaran: {luas}")    
+    case 3:
+        alas = float(input("masukkan panjang alas segitiga: "))
+        tinggi = float(input("masukkan tinggi segitiga: "))
+        luas = 0.5 * alas * tinggi    
+        print(f"luas segitiga: {luas}")
+    case _:
+        print("salah pilih,silakan pilih 1,2 atau 3.")
+        
+ #memanggil fungsi hitung_luas          
